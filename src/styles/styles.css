@@ -1,0 +1,226 @@
+/*  VARIABLES / RESETEO */
+   :root {
+    --font-family: 'Roboto', sans-serif;
+    --color-bg: #f5f5f5;
+    --color-text: #333;
+    --color-accent: #5d96d3; 
+    --color-light: #fff;
+    --color-border: #ccc;
+  }
+  
+  * {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  
+  /* ESTILOS GENERALES */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-accent);
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* HEADER / NAVBAR */
+  header {
+    background-color: var(--color-light);
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  
+  nav .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav .nav-links a {
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s;
+  }
+  
+  /* Carrito (CartWidget) */
+  .cart-widget {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--color-text);
+  }
+  
+  .cart-widget img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .cart-widget span {
+    font-weight: bold;
+  }
+  
+  /* ITEM LIST */
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .item-card {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    width: 220px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s;
+  }
+  
+  .item-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-card img {
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .item-card p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ITEM DETAIL */
+  .item-detail {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .item-detail img {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  
+  .item-detail h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  /* ITEM COUNT */
+  .item-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .item-count .controls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .item-count .controls button {
+    background-color: var(--color-accent);
+  }
+  
+  /* CART */
+  .cart-container {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  /* CHECKOUT */
+  .checkout-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2rem;
+  }
+  
+  .checkout-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .checkout-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .checkout-form input {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  .checkout-form button {
+    align-self: flex-end;
+  }
+  
